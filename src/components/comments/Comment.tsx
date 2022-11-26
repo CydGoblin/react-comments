@@ -1,9 +1,9 @@
-import {FC} from "react";
-import CommentEntity from "../../../models/CommentEntity";
+import {FC, useReducer} from "react";
+import CommentEntity from "../../models/CommentEntity";
 import styles from "./Comment.module.css"
 import CommentHeader from "./CommentHeader";
+import CommentVotes from "./CommentVotes";
 import CommentActions from "./CommentActions";
-import {CommentVotes} from "./CommentVotes";
 
 const Comment: FC<{ comment: CommentEntity }> = ({comment}) => {
   return (
@@ -14,10 +14,8 @@ const Comment: FC<{ comment: CommentEntity }> = ({comment}) => {
           <div>{comment.content}</div>
         </div>
         <div className={styles.comment_actions}>
-          <CommentVotes />
-          <div>
-            <CommentActions />
-          </div>
+          <CommentVotes score={comment.score} />
+          <CommentActions />
         </div>
       </div>
       <div className={styles.comment_replies}>

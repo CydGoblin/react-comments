@@ -33,6 +33,12 @@ body {
   background-color: var(--gray-100);
 }
 
+button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
 .container {
   margin: auto;
   padding: 2rem 1rem;

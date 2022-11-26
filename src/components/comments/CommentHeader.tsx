@@ -1,5 +1,5 @@
 import {FC} from "react";
-import CommentEntity from "../../../models/CommentEntity";
+import CommentEntity from "../../models/CommentEntity";
 import styles from "./CommentHeader.module.css"
 import { formatRelative } from 'date-fns'
 import CommentActions from "./CommentActions";

@@ -1,6 +1,6 @@
 import React, {FC} from "react";
 import CommentEntity from "../../models/CommentEntity";
-import Comment from "./CommentDisplay/Comment";
+import Comment from "./Comment";
 
 export const CommentsContainer: FC<{ comments: CommentEntity[] }> = ({comments}) => {
   return (

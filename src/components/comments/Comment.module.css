@@ -8,8 +8,8 @@
 .comment_actions {
   display: flex;
   justify-content: space-between;
+  margin-top: 1rem;
 }
-
 
 .comment_replies {
   padding-left: 1rem;

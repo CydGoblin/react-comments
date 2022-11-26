@@ -1,0 +1,29 @@
+.vote_container {
+  background-color: var(--gray-100);
+  color: var(--blue-dark);
+  display: flex;
+}
+
+.vote_counter {
+  padding: 0.5rem;
+  font-weight: var(--font-medium);
+}
+
+.vote_btn {
+  background-color: var(--gray-100);
+  padding: 0.5rem 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.vote_btn:hover {
+  background-color: var(--gray-200);
+}
+
+.vote_btn:first-child {
+  border-radius: var(--border-radius-sm) 0 0 var(--border-radius-sm);
+}
+
+.vote_btn:last-child {
+  border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+}

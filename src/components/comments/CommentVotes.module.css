@@ -7,6 +7,7 @@
 .vote_counter {
   padding: 0.5rem;
   font-weight: var(--font-medium);
+  text-align: center;
 }
 
 .vote_btn {
@@ -26,4 +27,25 @@
 
 .vote_btn:last-child {
   border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .vote_container {
+    flex-direction: column;
+    margin-right: 1rem;
+  }
+
+  .vote_btn {
+    padding: 0.75rem;
+    min-height: 2rem;
+    flex-grow: 1;
+  }
+
+  .vote_btn:first-child {
+    border-radius: var(--border-radius-sm) var(--border-radius-sm) 0 0;
+  }
+
+  .vote_btn:last-child {
+    border-radius: 0 0 var(--border-radius-sm) var(--border-radius-sm);
+  }
 }

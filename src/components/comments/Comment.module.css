@@ -8,10 +8,28 @@
 .comment_actions {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 1rem;
 }
 
 .comment_replies {
   padding-left: 1rem;
   border-left: 2px solid var(--gray-200);
+}
+
+@media screen and (min-width: 720px) {
+  .comment_container {
+    display: flex;
+  }
+
+  .comment_replies {
+    padding-left: 2rem;
+    margin-left: 2rem;
+  }
+
+  .comment_actions {
+    order: -1;
+    margin-top: 0;
+    display: inline-block;
+  }
 }

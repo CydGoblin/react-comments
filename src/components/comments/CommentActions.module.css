@@ -1,0 +1,41 @@
+.header {
+  display: none;
+}
+
+@media screen and (min-width: 720px) {
+  .footer {
+    display: none;
+  }
+}
+@media screen and (min-width: 720px) {
+  .header {
+    display: inline-block;
+  }
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn:hover {
+  text-decoration: underline;
+}
+
+.btn svg {
+  margin-right: 0.5rem;
+}
+
+.reply {
+  color: var(--blue-dark);
+  font-weight: var(--font-medium);
+}
+
+.delete {
+  color: var(--red-dark);
+}
+
+.edit {
+  color: var(--blue-dark);
+  font-weight: var(--font-medium);
+}

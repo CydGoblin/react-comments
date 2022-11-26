@@ -30,11 +30,5 @@
 }
 
 .comment_actions {
-  display: none;
-}
-
-@media screen and (max-width: var(--breakpoint-lg)) {
-  .comment_actions_header {
-    display: inline-block;
-  }
+  margin-left: auto;
 }

@@ -1,4 +1,4 @@
-import {FC, useReducer} from "react";
+import {FC} from "react";
 import CommentEntity from "../../models/CommentEntity";
 import styles from "./Comment.module.css"
 import CommentHeader from "./CommentHeader";
@@ -7,7 +7,7 @@ import CommentActions from "./CommentActions";
 
 const Comment: FC<{ comment: CommentEntity }> = ({comment}) => {
   return (
-    <div>
+    <>
       <div className={styles.comment_container}>
         <div className={styles.comment_content}>
           <CommentHeader comment={comment} />
@@ -15,13 +15,13 @@ const Comment: FC<{ comment: CommentEntity }> = ({comment}) => {
         </div>
         <div className={styles.comment_actions}>
           <CommentVotes score={comment.score} />
-          <CommentActions />
+          <CommentActions isOnFooter={true} />
         </div>
       </div>
       <div className={styles.comment_replies}>
         {comment.replies && comment.replies.map(reply => <Comment key={reply.id} comment={reply} />)}
       </div>
-    </div>
+    </>
   )
 }
 

@@ -2,19 +2,19 @@ import React from 'react';
 import './App.css';
 import useFetch from "./hooks/useFetch";
 import CommentEntity from "./models/CommentEntity";
-import {CommentsContainer} from "./components/CommentsContainer";
+import {CommentsContainer} from "./components/Comments/CommentsContainer";
 
 function App() {
-    const {loading, data} = useFetch<{ comments: CommentEntity[] }>('/comments');
+  const {loading, data} = useFetch<{ comments: CommentEntity[] }>('/comments');
 
-    const comments = data.comments
+  const comments = data.comments
 
-    return (
-        <div className="container">
-            {loading && <div>LOADING{loading}</div>}
-            {!loading && <CommentsContainer comments={comments}/>}
-        </div>
-    );
+  return (
+    <div className="container">
+      {loading && <div>LOADING{loading}</div>}
+      {!loading && <CommentsContainer comments={comments} />}
+    </div>
+  );
 }
 
 export default App;

@@ -10,7 +10,14 @@
   --gray-100: hsl(228, 33%, 97%);
   --white: hsl(0, 0%, 100%);
 
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+
+  --border-radius-sm: 3px;
   --border-radius: 10px;
+
+  --breakpoint-lg: 720px;
 }
 
 html {
@@ -32,7 +39,7 @@ body {
   max-width: 375px;
 }
 
-@media (min-width: 720px) {
+@media (min-width: var(--breakpoint-lg)) {
   .container {
     padding: 3rem 0;
   }
